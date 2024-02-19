@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build --base=/graduate-work/",
     "preview": "vite preview"
-  },
+  }, 
   "devDependencies": {
     "vite": "^4.5.2",
     "glob": "^8.1.0"
