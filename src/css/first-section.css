@@ -1,0 +1,39 @@
+.first-section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px 10px;
+}
+@media screen and (max-width: 720px) {
+    .first-section {
+        max-width: 320px;
+    }
+}
+.first-title {
+    text-align: center;
+    line-height: 1em;
+    font-size: 28px;
+}
+.accent-dot {
+    display: inline-block;
+    color: blue
+}
+.eng-text {
+    text-align: center;
+    margin-top: 48px;
+}
+.read-more-button {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-flex;
+    letter-spacing: 4px;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    background-color: blue;
+    color: #fff;
+    margin-top: 48px;
+    padding: 17px 48px ;
+    border-radius: 50px;
+    border: none;
+}
