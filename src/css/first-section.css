@@ -1,39 +1,117 @@
 .first-section {
-    display: flex;
-    flex-direction: column;
     margin: auto;
     padding: 20px 10px;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767.98px) {
     .first-section {
-        max-width: 320px;
+        /* max-height: 720px; */
+        /* max-width: 320px; */
     }
 }
+@media screen and (min-width: 768px) {
+    .first-section {
+        display: flex;
+        flex-direction: row;
+        /* max-width: 768px; */
+    }
+}
+
+.list-of-section {
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .list-of-section {
+        display: flex;
+    }
+}
+
+.sec-width-help-btn {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    margin: 30px 10px;
+}
+@media screen and (min-width: 768px) {
+    .sec-width-help-btn {
+        width: 50%;
+        /* justify-content: baseline; */
+    }
+}
+
+.button-centering {
+    /* margin: 0, auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
 .first-title {
     text-align: center;
     line-height: 1em;
     font-size: 28px;
 }
+@media screen and (min-width: 768px) {
+    .first-title {
+        text-align: start;
+    }
+}
+
 .accent-dot {
     display: inline-block;
     color: blue
 }
+
 .eng-text {
     text-align: center;
     margin-top: 48px;
 }
+@media screen and (min-width: 768px) {
+    .eng-text {
+        text-align: start;
+    }
+}
+
+.cont-for-button {
+    display: flex;  
+    justify-content: center;
+}
+
 .read-more-button {
+    
     font-size: 16px;
     font-weight: bold;
     display: inline-flex;
-    letter-spacing: 4px;
-    justify-content: center;
-    margin: auto;
-    align-items: center;
-    background-color: blue;
+    letter-spacing: 5px;
+    background-color: #0000ff;
     color: #fff;
     margin-top: 48px;
     padding: 17px 48px ;
     border-radius: 50px;
     border: none;
+}
+
+.read-more-button:hover {
+    background-color: #0000c4;
+}
+
+.background-image {
+    display: flex;
+    background-color: orange;
+    height: 400px;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 768px) {
+    .background-image {
+        width: 50%;
+    }
+}
+.inher-border {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: #0000ff 20px solid;
+    width: calc(100% - 150px);
+    max-width: 250px;
+    height: 300px;
 }
